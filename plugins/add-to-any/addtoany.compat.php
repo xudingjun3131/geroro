@@ -42,6 +42,7 @@ function addtoany_amp_additional_css_styles( $amp_template ) {
 function addtoany_amp_icons_css( $amp_template ) {
 	global $A2A_SHARE_SAVE_amp_icons_css;
 	echo $A2A_SHARE_SAVE_amp_icons_css;
+<<<<<<< HEAD
 }
 
 /**
@@ -52,4 +53,6 @@ add_action( 'woocommerce_share', 'addtoany_woocommerce_share', 10 );
 function addtoany_woocommerce_share() {
 	remove_filter( 'the_content', 'A2A_SHARE_SAVE_add_to_content', 98 );
 	ADDTOANY_SHARE_SAVE_KIT();
+=======
+>>>>>>> origin/master
 }

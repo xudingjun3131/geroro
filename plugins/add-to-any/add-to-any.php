@@ -3,7 +3,11 @@
 Plugin Name: AddToAny Share Buttons
 Plugin URI: https://www.addtoany.com/
 Description: Share buttons for your pages including AddToAny's universal sharing button, Facebook, Twitter, Google+, Pinterest, WhatsApp and many more.
+<<<<<<< HEAD
 Version: 1.7.13
+=======
+Version: 1.7.12
+>>>>>>> origin/master
 Author: AddToAny
 Author URI: https://www.addtoany.com/
 Text Domain: add-to-any
