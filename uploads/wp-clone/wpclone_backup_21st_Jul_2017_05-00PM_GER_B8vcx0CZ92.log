@@ -1,0 +1,18 @@
+Friday, 21-Jul-2017 17:00:46 - backup started
+Friday, 21-Jul-2017 17:00:46 - wp version     : 4.8
+Friday, 21-Jul-2017 17:00:46 - php version    : 5.6.17
+Friday, 21-Jul-2017 17:00:46 - mysql version  : 5.7.10
+Friday, 21-Jul-2017 17:00:46 - memory limit   : 1024M
+Friday, 21-Jul-2017 17:00:46 - execution time : 600
+Friday, 21-Jul-2017 17:00:46 - mysql timeout  : 600
+Friday, 21-Jul-2017 17:00:46 - socket timeout : 600
+Friday, 21-Jul-2017 17:00:46 - files larger than 25 MB will be excluded from the backup
+Friday, 21-Jul-2017 17:00:46 - generating file list
+Friday, 21-Jul-2017 17:00:49 - number of files to include in the archive is 8569, and their uncompressed size is 104.79 MB
+Friday, 21-Jul-2017 17:00:49 - finished generating file list
+Friday, 21-Jul-2017 17:00:49 - database backup started
+Friday, 21-Jul-2017 17:00:49 - backing up tables with "ge_" prefix
+Friday, 21-Jul-2017 17:00:49 - number of tables to backup - 46
+Friday, 21-Jul-2017 17:00:49 - database backup finished
+Friday, 21-Jul-2017 17:00:49 - archiving files using ziparchive
+Friday, 21-Jul-2017 17:01:48 - backup finished

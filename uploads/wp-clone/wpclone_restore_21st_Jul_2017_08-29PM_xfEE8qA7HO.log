@@ -1,0 +1,19 @@
+Friday, 21-Jul-2017 20:29:44 - restore started
+Friday, 21-Jul-2017 20:29:44 - wp version     : 4.8
+Friday, 21-Jul-2017 20:29:44 - php version    : 5.6.17
+Friday, 21-Jul-2017 20:29:44 - mysql version  : 5.7.10
+Friday, 21-Jul-2017 20:29:44 - memory limit   : 1024M
+Friday, 21-Jul-2017 20:29:44 - execution time : 600
+Friday, 21-Jul-2017 20:29:44 - mysql timeout  : 600
+Friday, 21-Jul-2017 20:29:44 - socket timeout : 600
+Friday, 21-Jul-2017 20:29:44 - file exists in the backup folder, filesize - 60.35 MB
+Friday, 21-Jul-2017 20:29:44 - extracting database using ziparchive
+Friday, 21-Jul-2017 20:29:45 - database import started
+Friday, 21-Jul-2017 20:29:46 - updating mysql query with current site's url - new query : "INSERT INTO ge_options VALUES("1", "siteurl", "http://www.geroro.com", "yes")"
+Friday, 21-Jul-2017 20:29:54 - mysql query failed. error : 1065 Query was empty - query : ""
+Friday, 21-Jul-2017 20:29:54 - database import finished
+Friday, 21-Jul-2017 20:29:54 - URLs are similar, skipping search and replace
+Friday, 21-Jul-2017 20:29:54 - extracting archive using ziparchive
+Friday, 21-Jul-2017 20:30:15 - copying files..
+Friday, 21-Jul-2017 20:30:53 - deleting temp directory..
+Friday, 21-Jul-2017 20:30:57 - restore finished
