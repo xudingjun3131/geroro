@@ -1,0 +1,8 @@
+/*可以在这里添加你自己的css*/
+#container
+{
+width:998px;
+height:auto;
+max-height:900px;
+overflow:auto;
+}
