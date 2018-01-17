@@ -5,8 +5,8 @@
 .syntaxhighlighter .italic{font-style:italic}
 .syntaxhighlighter .gutter div{white-space:pre;word-wrap:normal}
 .syntaxhighlighter caption{text-align:left;padding:.5em 0 .5em 1em}
-.syntaxhighlighter td.code{max-width:600px;max-height:400px;overflow:hidden;}
-.syntaxhighlighter td.code .container{overflow-x:auto !important;max-width:600px;position:relative;overflow:hidden;word-wrap:normal;}
+.syntaxhighlighter td.code{max-width:870px;max-height:400px;overflow:hidden;}
+.syntaxhighlighter td.code .container{overflow-x:auto !important;max-width:870px;position:relative;overflow:hidden;word-wrap:normal;}
 .syntaxhighlighter td.code .container textarea{max-width:870px;box-sizing:border-box;position:absolute;left:0;top:0;width:100%;border:none;background:white;padding-left:1em;overflow:hidden;white-space:pre;word-break:break-all;}
 .syntaxhighlighter td.gutter .line{text-align:right;padding:0 .5em 0 1em}
 .syntaxhighlighter td.code .line{max-width:870px;padding:0 1em;word-wrap:normal;}

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function wp_statistics_purge_data( $purge_days ) {
 	GLOBAL $wpdb, $WP_Statistics;
 

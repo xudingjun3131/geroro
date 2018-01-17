@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function wp_statistics_export_data() {
 	GLOBAL $WP_Statistics, $wpdb; // this is how you get access to the database
 

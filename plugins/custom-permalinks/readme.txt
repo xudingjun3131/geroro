@@ -4,8 +4,8 @@ Contributors: sasiddiqui, michaeltyson
 Donate link: https://www.paypal.me/yasglobal
 Tags: permalink, url, link, address, custom, redirect, custom post type
 Requires at least: 2.6
-Tested up to: 4.8
-Stable tag: 0.9.3
+Tested up to: 4.9
+Stable tag: 1.2.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,47 @@ within that category.
 
 > If anyone wants the different Structure Tags for their Post types or use symbols in the URLs So, use the [Permalinks Customizer](https://wordpress.org/plugins/permalinks-customizer/) which is a fork of this plugin and contains the enhancement of this plugin. 
 
+== Filters ==
+
+Plugin provides some filter which maybe used according to your needs.
+
+To exclude any Permalink to processed with the plugin so, just add the filter looks like this:
+`
+function check_xml_sitemap_url( $permalink ) {
+  if ( false !== strpos( $permalink, 'sitemap.xml' )) {
+    return '__true';
+  }
+  return;
+}
+add_filter( 'custom_permalinks_request_ignore', 'check_xml_sitemap_url' );
+`
+
+To exclude permalink from any post type so, just add the filter looks like this:
+`
+function yasglobal_exclude_post_types( $post_type ) {
+  if ( $post_type == 'custompost' ) {
+    return '__true';
+  }
+  return '__false';
+}
+add_filter( 'custom_permalinks_exclude_post_type', 'yasglobal_exclude_post_types');
+`
+
+Note: custom_permalinks_exclude_post_type doesn't work on the posts permalink which has been created previously.
+
+To make the like query works as it was before so, just add this line in your theme's functions.php:
+`
+add_filter( 'custom_permalinks_like_query', '__return_true');
+`
+
+Note: Use `custom_permalinks_like_query` filter if the URLs doesn't works for you after upgrading to v1.2.9
+
+== Thanks for the Support! ==
+
+The support from the users that love Custom Permalinks is huge. You can support Custom Permalinks's future development and help to make it even better by donating or even giving a 5 star rating with a nice message to me :)
+
+[Donate to Custom Permalinks](https://www.paypal.me/yasglobal)
+
 == Installation ==
 
 1. Unzip the package, and upload `custom-permalinks` to the `/wp-content/plugins/` directory
@@ -33,6 +74,93 @@ within that category.
 3. Edit any post, page, tag or category to set a custom permalink.
 
 == Changelog ==
+
+= 1.2.10 =
+
+  * Fixed Redirect Issue of Child Pages
+
+= 1.2.9 =
+
+  * Enhancements
+    * Added Filter to enable the like query
+  * Bugs
+    * PHP error displayed on all pages using custom permalinks
+    * Removed LIKE Query in default. It only works if the site uses PolyLang,
+      AMP Plugins or separately enabled using the provided filter.
+
+= 1.2.8 =
+
+  * Add Order by in request query
+
+= 1.2.7 =
+
+  * Fixed Parse Error
+
+= 1.2.6 =
+
+  * Enhancements
+    * Added Filter to Exclude Post types
+  * Bugs
+    * Fixed Query Issue on parse_request
+    * Resolving Issues with Cornerstone
+
+= 1.2.5 =
+  
+  * Fixed Category/Tag Update Issue + Typo on Admin Page
+
+= 1.2.4 =
+
+  * Fixed Slug issue with Yoast SEO
+
+= 1.2.3 =
+
+  * Fixed PHP Notice on Edit Post Page
+
+= 1.2.2 =
+
+  * Fixed Typo of Class Object for term on Admin Page
+
+= 1.2.1 =
+  * Fixed Class Typo
+
+= 1.2 =
+
+  * Enhancements
+    * Added Filter to Exclude/Ignore URL to be processed
+    * Added Translation Capability
+    * Split the Code using OOPS Concept to improve performance and applied the filters according to the need
+    * Removed some unnecessary filters
+  * Bugs
+    * Fixed Vulnerability Issues
+
+= 1.1 =
+  
+  * Enhancements
+    * Added PostTypes Permalinks Page
+      * View all the PostTypes permalinks
+      * Search Permalinks
+      * Sort by Title
+      * Pagination
+    * Added Categories Permalinks Page
+      * View all the Category/Tags permalinks
+      * Search Permalinks
+      * Pagination
+
+  * Bug Fixes
+     * 404 Issues
+     * Child pages bug
+    
+= 1.0.2 =
+  
+  * Fixed Notice and some URL Issues
+
+= 1.0.1 =
+  
+  * Fixed issue with AMP Pages
+
+= 1.0 =
+  
+  * Updated Query on the `custom_permalinks_request` Function
 
 = 0.9.3 =
 

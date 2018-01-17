@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: UEditor
- * Plugin URI: http://www.shuxinfeng.cn/sxf/4424.html
- * Version: 1.4.3.1
- * Author: 大山, SamLiu, taoqili
- * Author URI: https://www.shuxinfeng.cn
- * Description: 强大的百度开源富文本编辑器UEditor正式登陆wordpress！此插件最早由taoqili开发，SamLiu改进,但两位作者均不再发布更新版本，大山在此基础上更新到1.4.3的最新版本。有任何问题欢迎登陆树新风www.shuxinfeng.cn使用交流。
+ * Plugin URI: http://www.geroro.com/archives/905
+ * Version: 1.4.3.3
+ * Author: 大山, SamLiu, taoqili, Amber
+ * Author URI: https://www.gerero.cn
+ * Description: 强大的百度开源富文本编辑器UEditor正式登陆wordpress！此插件最早由taoqili开发，SamLiu改进,但两位作者均不再发布更新版本，大山在此基础上更新到1.4.3的最新版本。有任何问题欢迎登陆树新风www.geroro.cn使用交流。
  */
 @include_once( dirname( __FILE__ ) . "/ueditor.class.php" );
 if ( class_exists( "UEditor" ) ) {

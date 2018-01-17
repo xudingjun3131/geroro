@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function wp_statistics_purge_visitor_hits( $purge_hits ) {
 	GLOBAL $wpdb, $WP_Statistics;
 

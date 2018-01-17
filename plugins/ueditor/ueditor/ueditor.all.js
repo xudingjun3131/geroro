@@ -13877,7 +13877,7 @@ UE.plugins['wordcount'] = function(){
 UE.plugins['pagebreak'] = function () {
     var me = this,
         notBreakTags = ['td'];
-    me.setOpt('pageBreakTag','_ueditor_page_break_tag_');
+    me.setOpt('pageBreakTag','<!--nextpage-->');
 
     function fillNode(node){
         if(domUtils.isEmptyBlock(node)){
@@ -28761,7 +28761,7 @@ UE.ui = baidu.editor.ui = {};
             function setCount(editor,ui) {
                 editor.setOpt({
                     wordCount:true,
-                    maximumWords:10000,
+                    maximumWords:100000,
                     wordCountMsg:editor.options.wordCountMsg || editor.getLang("wordCountMsg"),
                     wordOverFlowMsg:editor.options.wordOverFlowMsg || editor.getLang("wordOverFlowMsg")
                 });

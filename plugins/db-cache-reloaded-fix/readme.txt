@@ -1,4 +1,4 @@
-﻿=== DB Cache Reloaded Fix ===
+=== DB Cache Reloaded Fix ===
 Contributors: ivankristianto
 Donate link: http://www.ivankristianto.com/portfolio/
 Tags: performance, caching, wp-cache, db-cache, cache

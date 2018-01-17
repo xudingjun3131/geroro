@@ -1,4 +1,4 @@
-﻿=== Donate With QRcode ===
+=== Donate With QRcode ===
 Contributors: wbolt,mrkwong
 Donate link: http://www.wbolt.com/
 Tags: 支付宝, 微信支付, PayPal, 二维码, QRcode, 打赏, Donate 
